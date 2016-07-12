@@ -1,5 +1,5 @@
 #include <iostream>
-#import <string>
+#include <string>
 using namespace std;
 
 /*
@@ -23,10 +23,12 @@ int main(){
 	cout << endl << "enter the proposed symbol: " << endl;
 	elementSymbol = cin.get();
 
-	if isValidElementSymbol(elementName, elementSymbol):
+	if (isValidElementSymbol(elementName, elementSymbol)){
 		cout << "That'll do donkey" << endl;
-	else
+	}
+	else{
 		cout << "Nope try again";
+	}
 	return 0;
 }
 
@@ -34,12 +36,13 @@ bool isValidElementSymbol(string EName, string ESymbol)
 {
 	bool SymIsTwoLetters, LettersInElementName, inOrder, CorrectlyCounted;
 
-	if ESymbol.length() != 2:
-		
-	for i in EName:
-		if EName[i] ==
-	if SymIsTwoLetters & LettersInElementName & inOrder & CorrectlyCounted:
+	if (ESymbol.length() == int(2)){
+		SymIsTwoLetters = true;
+	}
+	for
+	if (SymIsTwoLetters && LettersInElementName && inOrder && CorrectlyCounted) {
 		return true;
+	}
 	else
 		return false;
 }
