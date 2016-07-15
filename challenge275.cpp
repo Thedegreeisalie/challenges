@@ -39,7 +39,14 @@ bool isValidElementSymbol(string EName, string ESymbol)
 	if (ESymbol.length() == int(2)){
 		SymIsTwoLetters = true;
 	}
-	for
+	for (int i = EName.length(); i >= 0; i--){
+		if (ESymbol[0] != EName[i] && ESymbol[1] != EName[i]) {
+			LettersInElementName = false;
+		}
+		else {
+			LettersInElementName = true;
+		}
+	}
 	if (SymIsTwoLetters && LettersInElementName && inOrder && CorrectlyCounted) {
 		return true;
 	}
